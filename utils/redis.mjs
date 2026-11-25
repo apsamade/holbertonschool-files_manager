@@ -1,5 +1,7 @@
-import { createClient } from 'redis';
+import redis from 'redis';
 import { promisify } from 'util';
+
+const { createClient } = redis;
 
 /**
  * Wrapper around a Redis client.

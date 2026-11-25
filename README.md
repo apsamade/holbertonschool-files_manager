@@ -25,7 +25,7 @@ Install dependencies with `npm install`, then run a script with `npm run dev <fi
 | --- | --- |
 | `utils/redis.mjs` | `RedisClient` class (`isAlive`, `get`, `set` with expiration, `del`) and exported `redisClient` instance |
 | `utils/db.mjs` | `DBClient` class (`isAlive`, `nbUsers`, `nbFiles`) and exported `dbClient` instance |
-| `utils/auth.mjs` | Helpers to retrieve the user from the `X-Token` header |
+| `utils/auth.js` | Helpers to retrieve the user from the `X-Token` header |
 | `server.js` | Express server listening on `PORT` (default 5000), loads `routes/index.js` |
 | `routes/index.js` | All API endpoints |
 | `controllers/AppController.js` | `GET /status`, `GET /stats` |
